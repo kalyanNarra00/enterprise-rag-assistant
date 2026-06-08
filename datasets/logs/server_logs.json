@@ -1,0 +1,202 @@
+[
+  {
+    "timestamp": "2026-01-05T08:12:33Z",
+    "level": "info",
+    "service": "auth-service",
+    "message": "User authentication successful",
+    "server_id": "srv-auth-01",
+    "details": {"user": "kbrien@nextera-tech.com", "method": "SSO", "session_duration_minutes": 480}
+  },
+  {
+    "timestamp": "2026-01-07T14:23:17Z",
+    "level": "warn",
+    "service": "auth-service",
+    "message": "Multiple failed login attempts detected",
+    "server_id": "srv-auth-02",
+    "details": {"user": "dthompson@nextera-tech.com", "attempts": 4, "source_ip": "198.51.100.47", "action": "account_not_locked"}
+  },
+  {
+    "timestamp": "2026-01-10T03:45:09Z",
+    "level": "error",
+    "service": "auth-service",
+    "message": "Account locked after 5 failed login attempts",
+    "server_id": "srv-auth-01",
+    "details": {"user": "mgonzalez@nextera-tech.com", "attempts": 5, "source_ip": "203.0.113.88", "lockout_duration_minutes": 30, "suspected_bruteforce": true}
+  },
+  {
+    "timestamp": "2026-01-12T09:30:22Z",
+    "level": "info",
+    "service": "payment-service",
+    "message": "Payment processed successfully",
+    "server_id": "srv-pay-01",
+    "details": {"transaction_id": "TXN-30001", "amount": 45000.00, "currency": "USD", "processor": "Stripe"}
+  },
+  {
+    "timestamp": "2026-01-15T16:44:51Z",
+    "level": "error",
+    "service": "payment-service",
+    "message": "Payment processing failed - gateway timeout",
+    "server_id": "srv-pay-02",
+    "details": {"transaction_id": "TXN-30004", "amount": 45000.00, "error_code": "GATEWAY_TIMEOUT", "retry_count": 3, "gateway": "Stripe"}
+  },
+  {
+    "timestamp": "2026-01-18T11:15:03Z",
+    "level": "critical",
+    "service": "db-service",
+    "message": "Database connection pool exhausted",
+    "server_id": "srv-db-01",
+    "details": {"database": "nextera_production", "max_connections": 200, "active_connections": 200, "queued_requests": 47, "resolution": "auto-scaled to 300 connections"}
+  },
+  {
+    "timestamp": "2026-01-22T07:00:15Z",
+    "level": "info",
+    "service": "api-gateway",
+    "message": "API rate limit threshold reached for client",
+    "server_id": "srv-gw-01",
+    "details": {"client_id": "meridian-healthcare-api", "requests_per_minute": 950, "limit": 1000, "endpoint": "/api/v2/patients"}
+  },
+  {
+    "timestamp": "2026-01-28T22:33:41Z",
+    "level": "error",
+    "service": "auth-service",
+    "message": "Failed login attempt from blocked IP range",
+    "server_id": "srv-auth-01",
+    "details": {"source_ip": "185.220.101.34", "blocked_reason": "TOR_EXIT_NODE", "attempts_from_range": 127, "geo": "Unknown"}
+  },
+  {
+    "timestamp": "2026-02-03T04:12:00Z",
+    "level": "critical",
+    "service": "api-gateway",
+    "message": "Service outage detected - API gateway unresponsive",
+    "server_id": "srv-gw-02",
+    "details": {"downtime_start": "2026-02-03T04:08:00Z", "affected_services": ["auth-service", "payment-service", "data-service"], "root_cause": "certificate_expiry", "estimated_recovery": "2026-02-03T05:00:00Z"}
+  },
+  {
+    "timestamp": "2026-02-03T04:58:22Z",
+    "level": "info",
+    "service": "api-gateway",
+    "message": "Service restored after certificate renewal",
+    "server_id": "srv-gw-02",
+    "details": {"downtime_duration_minutes": 50, "certificate_renewed": true, "services_restored": ["auth-service", "payment-service", "data-service"]}
+  },
+  {
+    "timestamp": "2026-02-08T10:22:45Z",
+    "level": "warn",
+    "service": "payment-service",
+    "message": "Payment retry succeeded after initial failure",
+    "server_id": "srv-pay-01",
+    "details": {"transaction_id": "TXN-30009", "amount": 22000.00, "initial_error": "INSUFFICIENT_FUNDS", "retry_attempt": 2, "final_status": "completed"}
+  },
+  {
+    "timestamp": "2026-02-12T15:07:33Z",
+    "level": "error",
+    "service": "payment-service",
+    "message": "Refund processing failed",
+    "server_id": "srv-pay-02",
+    "details": {"transaction_id": "TXN-30013", "refund_amount": 18000.00, "error": "ORIGINAL_TRANSACTION_DISPUTED", "requires_manual_review": true}
+  },
+  {
+    "timestamp": "2026-02-15T19:45:12Z",
+    "level": "warn",
+    "service": "db-service",
+    "message": "Slow query detected exceeding threshold",
+    "server_id": "srv-db-02",
+    "details": {"query_hash": "a7f3b2c1", "execution_time_ms": 12450, "threshold_ms": 5000, "table": "transactions", "operation": "SELECT with JOIN"}
+  },
+  {
+    "timestamp": "2026-02-20T08:30:00Z",
+    "level": "info",
+    "service": "auth-service",
+    "message": "Scheduled MFA token rotation completed",
+    "server_id": "srv-auth-01",
+    "details": {"tokens_rotated": 342, "failures": 0, "duration_seconds": 45}
+  },
+  {
+    "timestamp": "2026-02-25T13:18:27Z",
+    "level": "error",
+    "service": "auth-service",
+    "message": "SSO provider connection timeout",
+    "server_id": "srv-auth-02",
+    "details": {"provider": "Okta", "timeout_ms": 30000, "affected_users": 23, "fallback": "local_authentication_enabled"}
+  },
+  {
+    "timestamp": "2026-03-01T06:00:00Z",
+    "level": "info",
+    "service": "db-service",
+    "message": "Automated database backup completed successfully",
+    "server_id": "srv-db-01",
+    "details": {"database": "nextera_production", "backup_size_gb": 247.3, "duration_minutes": 18, "storage": "s3://nextera-backups/prod/2026-03-01"}
+  },
+  {
+    "timestamp": "2026-03-05T11:42:19Z",
+    "level": "critical",
+    "service": "payment-service",
+    "message": "Payment service health check failing",
+    "server_id": "srv-pay-01",
+    "details": {"consecutive_failures": 8, "last_success": "2026-03-05T11:30:00Z", "error": "CONNECTION_REFUSED", "dependent_service": "stripe-api", "impact": "all_payments_blocked"}
+  },
+  {
+    "timestamp": "2026-03-05T12:15:44Z",
+    "level": "info",
+    "service": "payment-service",
+    "message": "Payment service health restored",
+    "server_id": "srv-pay-01",
+    "details": {"downtime_duration_minutes": 33, "root_cause": "stripe_api_regional_outage", "transactions_queued": 14, "transactions_processed_on_recovery": 14}
+  },
+  {
+    "timestamp": "2026-03-10T09:55:38Z",
+    "level": "warn",
+    "service": "api-gateway",
+    "message": "Unusual traffic pattern detected",
+    "server_id": "srv-gw-01",
+    "details": {"source_ip_range": "192.0.2.0/24", "requests_per_second": 450, "normal_rps": 50, "action": "rate_limiting_applied", "potential_ddos": true}
+  },
+  {
+    "timestamp": "2026-03-14T17:28:55Z",
+    "level": "error",
+    "service": "auth-service",
+    "message": "Credential stuffing attack detected and blocked",
+    "server_id": "srv-auth-01",
+    "details": {"unique_usernames_attempted": 847, "source_ips": 12, "duration_minutes": 15, "accounts_locked": 3, "action": "ip_range_blocked"}
+  },
+  {
+    "timestamp": "2026-03-18T02:10:00Z",
+    "level": "critical",
+    "service": "db-service",
+    "message": "Disk space critically low on primary database server",
+    "server_id": "srv-db-01",
+    "details": {"disk_usage_percent": 94.7, "available_gb": 53.2, "total_gb": 1000, "action": "emergency_log_rotation_triggered", "old_logs_purged_gb": 120}
+  },
+  {
+    "timestamp": "2026-03-20T14:05:12Z",
+    "level": "warn",
+    "service": "payment-service",
+    "message": "Duplicate transaction attempt blocked",
+    "server_id": "srv-pay-02",
+    "details": {"transaction_id": "TXN-30020", "amount": 28000.00, "original_status": "pending", "idempotency_key": "idk-7f3a2b1c", "action": "duplicate_rejected"}
+  },
+  {
+    "timestamp": "2026-03-24T08:45:33Z",
+    "level": "info",
+    "service": "api-gateway",
+    "message": "API version v1 deprecation warning served",
+    "server_id": "srv-gw-01",
+    "details": {"client_id": "apex-financial-api", "deprecated_endpoint": "/api/v1/reports", "replacement": "/api/v2/reports", "sunset_date": "2026-06-30"}
+  },
+  {
+    "timestamp": "2026-03-28T20:30:00Z",
+    "level": "error",
+    "service": "db-service",
+    "message": "Replication lag exceeded threshold",
+    "server_id": "srv-db-02",
+    "details": {"replication_lag_seconds": 45, "threshold_seconds": 10, "primary": "srv-db-01", "replica": "srv-db-02", "action": "alert_sent_to_oncall"}
+  },
+  {
+    "timestamp": "2026-03-31T23:59:58Z",
+    "level": "info",
+    "service": "api-gateway",
+    "message": "Q1 2026 API usage summary generated",
+    "server_id": "srv-gw-01",
+    "details": {"total_requests": 14523847, "successful": 14380102, "client_errors_4xx": 98234, "server_errors_5xx": 45511, "uptime_percent": 99.72}
+  }
+]

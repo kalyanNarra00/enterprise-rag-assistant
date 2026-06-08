@@ -1,0 +1,56 @@
+NEXTERA TECHNOLOGIES INC.
+EMPLOYEE HANDBOOK
+Document ID: HR-HBK-2026-001
+Effective Date: January 1, 2026
+Department: Human Resources
+Access Level: Employee (All Staff)
+Last Revised: December 1, 2025
+Approved By: Sandra Mitchell, VP of Human Resources
+
+1. WELCOME
+
+Welcome to Nextera Technologies Inc. This handbook provides essential information about our company policies, workplace expectations, and employee benefits. All employees are expected to read and acknowledge this handbook within their first 5 business days. Please direct questions to your manager or HR at hr-support@nextera-tech.com.
+
+2. CODE OF CONDUCT
+
+All employees of Nextera Technologies are expected to conduct themselves with professionalism, integrity, and respect. The following standards apply to all staff:
+- Treat all colleagues, clients, and vendors with dignity and respect regardless of position, background, or personal characteristics
+- Maintain honesty and transparency in all business dealings and communications
+- Avoid conflicts of interest; disclose any outside business relationships that may affect your judgment or duties to your manager and HR in writing
+- Protect company assets, intellectual property, and confidential information at all times
+- Refrain from harassment, discrimination, or retaliation of any kind. Nextera Technologies maintains a zero-tolerance policy for workplace harassment as defined under Title VII and applicable state laws
+- Report any ethical concerns or policy violations through the anonymous Ethics Hotline at +1-512-555-0188 or ethics@nextera-tech.com
+
+Violations of the Code of Conduct will be addressed through the progressive discipline process: verbal warning, written warning, final written warning, and termination. Severe violations may result in immediate termination.
+
+3. WORK HOURS AND ATTENDANCE
+
+Standard business hours are Monday through Friday, 9:00 AM to 6:00 PM Central Time, with a 1-hour lunch break. Employees are expected to be available during core hours of 10:00 AM to 4:00 PM CT. Flexible scheduling outside core hours is available with manager approval. All employees must log their hours in Workday by 5:00 PM on the last business day of each week. Excessive tardiness or unexcused absences will be addressed through the disciplinary process. Employees must notify their manager of any unplanned absence by 8:30 AM on the day of absence.
+
+4. REMOTE WORK POLICY
+
+Nextera Technologies operates a hybrid work model effective January 2026:
+- All employees are required to be in-office a minimum of 3 days per week (Tuesday, Wednesday, and Thursday are designated in-office days)
+- Monday and Friday are optional remote work days
+- Fully remote arrangements may be approved for specific roles with VP-level approval and a signed Remote Work Agreement
+- Remote employees must maintain a dedicated, secure workspace with reliable internet (minimum 50 Mbps download speed)
+- All remote work must comply with the Information Security Policy (IT-POL-2026-007), including mandatory VPN usage
+- Remote employees are expected to be responsive on Slack and email during core hours and available for video calls with cameras on during scheduled meetings
+
+Employees relocating outside the state of Texas must notify HR at least 30 days in advance due to tax and employment law implications.
+
+5. EXPENSE REIMBURSEMENT
+
+Employees may submit reimbursement requests for legitimate business expenses through SAP Concur within 30 days of incurring the expense. The following guidelines apply:
+- Meals during business travel: Up to $75 per day ($25 breakfast, $25 lunch, $25 dinner)
+- Mileage: $0.67 per mile (IRS 2026 standard rate)
+- Hotels: Up to $250 per night in standard markets; up to $350 per night in high-cost markets (NYC, SF, DC)
+- Client entertainment: Up to $150 per person with prior manager approval
+- All expenses over $500 require second-level manager approval
+- Receipts are required for all expenses over $25
+- Reimbursements are processed within 10 business days of approval and deposited directly into the employee's payroll account
+
+Expenses that do not comply with these guidelines will be rejected. Fraudulent expense claims will result in immediate termination and potential legal action.
+
+---
+Nextera Technologies Inc. | 4500 Innovation Drive, Austin, TX 78759

@@ -1,0 +1,61 @@
+NEXTERA TECHNOLOGIES INC.
+INFORMATION SECURITY POLICY
+Document ID: IT-POL-2026-007
+Effective Date: January 1, 2026
+Department: Information Technology
+Access Level: Employee (All Staff)
+Last Revised: November 20, 2025
+Approved By: James Kowalski, Chief Information Security Officer
+
+1. PURPOSE
+
+This policy establishes the information security standards and acceptable use guidelines for all employees, contractors, and third-party vendors accessing Nextera Technologies systems and data. Compliance is mandatory and violations may result in disciplinary action, termination, or legal proceedings.
+
+2. PASSWORD REQUIREMENTS
+
+All user accounts must adhere to the following password standards:
+- Minimum length: 14 characters
+- Must include at least one uppercase letter, one lowercase letter, one numeral, and one special character (!@#$%^&*)
+- Passwords must be changed every 90 days
+- The last 12 passwords cannot be reused
+- Multi-Factor Authentication (MFA) is required for all accounts accessing internal systems, including email, VPN, and cloud platforms
+- Passwords must not contain the user's name, employee ID, or common dictionary words
+- Account lockout occurs after 5 consecutive failed login attempts, requiring IT Service Desk intervention (ext. 4500) to unlock
+
+Employees must never share credentials with any person, including IT staff. IT personnel will never ask for your password.
+
+3. VPN USAGE
+
+Remote access to Nextera Technologies' internal network must be conducted exclusively through the approved corporate VPN (GlobalProtect v6.2 or later). Requirements include:
+- VPN must be active before accessing any internal application, file share, or database
+- Split tunneling is strictly prohibited
+- VPN sessions will automatically disconnect after 30 minutes of inactivity
+- Employees must connect only from secured, private networks; public Wi-Fi usage requires prior IT Security approval and an additional encrypted tunnel
+- All VPN connections are logged and monitored by the Security Operations Center (SOC)
+- Personal devices must be enrolled in the Mobile Device Management (MDM) system before VPN access is provisioned
+
+4. DATA CLASSIFICATION
+
+All company data must be classified according to the following tiers:
+- PUBLIC: Marketing materials, published financial reports, press releases. No restrictions on distribution.
+- INTERNAL: Internal memos, project plans, meeting notes. Restricted to Nextera employees only.
+- CONFIDENTIAL: Employee records, customer PII, source code, financial projections. Restricted to authorized personnel with a documented business need. Must be encrypted at rest and in transit.
+- RESTRICTED: Board communications, M&A documents, security audit findings, executive compensation data. Accessible only to named individuals with explicit CISO or CEO approval. Requires AES-256 encryption and access is logged with tamper-proof audit trails.
+
+Employees are responsible for correctly classifying data they create or handle. Misclassification incidents must be reported within 24 hours to security@nextera-tech.com.
+
+5. INCIDENT REPORTING
+
+All employees are required to report suspected security incidents immediately. A security incident includes but is not limited to:
+- Unauthorized access to systems or data
+- Lost or stolen devices (laptops, phones, USB drives)
+- Phishing emails or social engineering attempts
+- Malware detection or unusual system behavior
+- Accidental disclosure of Confidential or Restricted data
+
+Reports must be submitted through the Incident Response Portal (incidents.nextera-tech.com) or by calling the 24/7 Security Hotline at +1-512-555-0199. Employees must preserve all evidence and refrain from attempting to investigate or remediate incidents independently. The SOC team will acknowledge all reports within 30 minutes during business hours and 2 hours outside business hours.
+
+Failure to report a known security incident is a violation of this policy and may result in disciplinary action.
+
+---
+Nextera Technologies Inc. | 4500 Innovation Drive, Austin, TX 78759

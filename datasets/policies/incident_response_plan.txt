@@ -1,0 +1,68 @@
+NEXTERA TECHNOLOGIES INC.
+IT INCIDENT RESPONSE PLAN
+Document ID: IT-POL-2026-012
+Effective Date: January 1, 2026
+Department: Information Technology
+Access Level: IT Admin
+Last Revised: December 5, 2025
+Approved By: James Kowalski, Chief Information Security Officer
+
+1. PURPOSE
+
+This document establishes the incident response procedures for Nextera Technologies Inc. It defines severity levels, roles and responsibilities, escalation paths, and communication protocols to ensure rapid and effective response to security incidents, service outages, and data breaches.
+
+2. SEVERITY LEVELS
+
+All incidents must be classified immediately upon detection using the following severity framework:
+
+SEV-1 (Critical): Complete service outage affecting all users or confirmed data breach involving customer PII or financial data. Examples: production database compromise, ransomware attack, payment system failure. Response time: 15 minutes. Resolution target: 4 hours.
+
+SEV-2 (High): Partial service degradation affecting more than 25% of users or unauthorized access to internal systems without confirmed data exfiltration. Examples: authentication service intermittent failures, DDoS attack mitigated but ongoing, malware detected on multiple endpoints. Response time: 30 minutes. Resolution target: 8 hours.
+
+SEV-3 (Medium): Isolated service issues affecting a single team or department, or policy violations without immediate security impact. Examples: single server hardware failure with redundancy in place, unauthorized software installation, VPN configuration anomaly. Response time: 2 hours. Resolution target: 24 hours.
+
+SEV-4 (Low): Minor issues with no user impact or informational security alerts. Examples: failed automated scan, single failed login from known user, certificate expiration warning (30+ days out). Response time: 8 hours. Resolution target: 72 hours.
+
+3. ESCALATION PROCEDURES
+
+The incident response team follows a tiered escalation model:
+
+Tier 1 - SOC Analyst (Security Operations Center): First responder for all alerts. Triages the incident, assigns severity, and attempts immediate resolution. If unresolved within the response time window, escalates to Tier 2. On-call SOC analyst is available 24/7 at +1-512-555-0199.
+
+Tier 2 - Senior Security Engineer: Leads technical investigation and remediation for SEV-2 and SEV-3 incidents. Coordinates with affected service teams. Escalates to Tier 3 if the incident involves data breach confirmation or requires executive decision-making.
+
+Tier 3 - CISO and Incident Commander: James Kowalski (CISO) assumes Incident Commander role for all SEV-1 incidents. Authorizes emergency changes, coordinates cross-functional response, and manages external communications. The CEO and General Counsel are notified within 30 minutes of any SEV-1 declaration.
+
+Tier 4 - Executive Crisis Team: Activated for incidents with legal, regulatory, or reputational impact. Includes CEO, General Counsel, VP of Communications, and CISO. Convened within 1 hour of Tier 3 escalation.
+
+4. COMMUNICATION TEMPLATES
+
+The following templates must be used for incident communications:
+
+INTERNAL NOTIFICATION (Slack #incident-response channel):
+"[SEV-X] [Service Name] - [Brief Description]. Incident Commander: [Name]. Status: [Investigating/Identified/Monitoring/Resolved]. Next update in [timeframe]. Join bridge: [conference link]."
+
+CUSTOMER NOTIFICATION (for SEV-1 and SEV-2 with external impact):
+"We are currently experiencing [brief description of impact]. Our engineering team is actively working to resolve this issue. We expect to provide an update by [time]. We apologize for any inconvenience. For urgent inquiries, contact support@nextera-tech.com."
+
+REGULATORY NOTIFICATION (for confirmed data breaches):
+Must be drafted by Legal within 24 hours of breach confirmation. GDPR requires notification to supervisory authorities within 72 hours. CCPA requires notification to affected California residents without unreasonable delay. The General Counsel (Catherine Whitfield) approves all regulatory notifications.
+
+POST-MORTEM REPORT:
+Required for all SEV-1 and SEV-2 incidents within 5 business days of resolution. Must include: timeline of events, root cause analysis, impact assessment, remediation actions taken, and preventive measures. Post-mortem reviews are conducted in the weekly Security Review meeting (Thursdays at 2:00 PM CT).
+
+5. TOOLS AND ACCESS
+
+The incident response team utilizes the following tools:
+- PagerDuty for alerting and on-call rotation
+- Splunk SIEM for log analysis and threat detection
+- CrowdStrike Falcon for endpoint detection and response
+- Jira (project: INC) for incident tracking and post-mortem documentation
+- Slack #incident-response for real-time coordination
+- Zoom bridge (dedicated incident line): +1-512-555-0200, PIN: 483920
+
+All incident response team members must complete annual tabletop exercises and maintain current access to the above tools. Access is reviewed quarterly by the CISO.
+
+---
+Nextera Technologies Inc. | 4500 Innovation Drive, Austin, TX 78759
+CONFIDENTIAL - IT ADMINISTRATION USE ONLY

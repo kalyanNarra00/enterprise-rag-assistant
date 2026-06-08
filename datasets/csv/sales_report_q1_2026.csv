@@ -1,0 +1,31 @@
+transaction_id,date,product,amount,region,sales_rep,status
+TXN-30001,2026-01-05,Enterprise Platform License,45000.00,Northeast,Kevin O'Brien,completed
+TXN-30002,2026-01-08,Cloud Storage Addon (500TB),12500.00,West,Maria Gonzalez,completed
+TXN-30003,2026-01-12,Professional Services - Implementation,28000.00,Southeast,Jennifer Walsh,completed
+TXN-30004,2026-01-15,Enterprise Platform License,45000.00,Midwest,Kevin O'Brien,completed
+TXN-30005,2026-01-19,API Gateway Module,8750.00,West,Maria Gonzalez,completed
+TXN-30006,2026-01-23,Annual Support Contract Renewal,18000.00,Northeast,Jennifer Walsh,completed
+TXN-30007,2026-01-28,Enterprise Platform License,45000.00,International,Maria Gonzalez,pending
+TXN-30008,2026-02-02,Data Analytics Suite,32000.00,Southeast,Kevin O'Brien,completed
+TXN-30009,2026-02-05,Cloud Storage Addon (1PB),22000.00,West,Jennifer Walsh,completed
+TXN-30010,2026-02-09,Professional Services - Migration,35000.00,Midwest,Maria Gonzalez,completed
+TXN-30011,2026-02-12,Security Compliance Module,15500.00,Northeast,Kevin O'Brien,completed
+TXN-30012,2026-02-15,Enterprise Platform License,45000.00,West,Jennifer Walsh,completed
+TXN-30013,2026-02-18,Annual Support Contract Renewal,18000.00,Southeast,Maria Gonzalez,refunded
+TXN-30014,2026-02-22,API Gateway Module,8750.00,International,Kevin O'Brien,completed
+TXN-30015,2026-02-25,Professional Services - Training,12000.00,Northeast,Jennifer Walsh,completed
+TXN-30016,2026-02-28,Data Analytics Suite,32000.00,Midwest,Maria Gonzalez,completed
+TXN-30017,2026-03-03,Enterprise Platform License,45000.00,West,Kevin O'Brien,completed
+TXN-30018,2026-03-06,Cloud Storage Addon (500TB),12500.00,Southeast,Jennifer Walsh,completed
+TXN-30019,2026-03-09,Security Compliance Module,15500.00,Northeast,Maria Gonzalez,completed
+TXN-30020,2026-03-12,Professional Services - Implementation,28000.00,International,Kevin O'Brien,pending
+TXN-30021,2026-03-14,Enterprise Platform License,45000.00,Midwest,Jennifer Walsh,completed
+TXN-30022,2026-03-17,Annual Support Contract Renewal,18000.00,West,Maria Gonzalez,completed
+TXN-30023,2026-03-19,API Gateway Module,8750.00,Southeast,Kevin O'Brien,cancelled
+TXN-30024,2026-03-21,Data Analytics Suite,32000.00,Northeast,Jennifer Walsh,completed
+TXN-30025,2026-03-23,Professional Services - Migration,35000.00,West,Maria Gonzalez,completed
+TXN-30026,2026-03-25,Cloud Storage Addon (1PB),22000.00,Midwest,Kevin O'Brien,completed
+TXN-30027,2026-03-26,Enterprise Platform License,45000.00,Southeast,Jennifer Walsh,completed
+TXN-30028,2026-03-28,Security Compliance Module,15500.00,International,Maria Gonzalez,completed
+TXN-30029,2026-03-30,Professional Services - Training,12000.00,Northeast,Kevin O'Brien,completed
+TXN-30030,2026-03-31,Annual Support Contract Renewal,18000.00,West,Jennifer Walsh,completed

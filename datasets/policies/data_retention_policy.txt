@@ -1,0 +1,58 @@
+NEXTERA TECHNOLOGIES INC.
+DATA RETENTION POLICY
+Document ID: LGL-POL-2026-002
+Effective Date: January 1, 2026
+Department: Legal
+Access Level: Manager and Above
+Last Revised: November 10, 2025
+Approved By: Catherine Whitfield, General Counsel
+
+1. PURPOSE
+
+This policy defines the retention periods, storage requirements, and deletion procedures for all data created, collected, or processed by Nextera Technologies Inc. Compliance with this policy is mandatory and supports our obligations under GDPR, CCPA, SOX, and other applicable regulations.
+
+2. RETENTION PERIODS
+
+Data must be retained for the minimum period required by law or business necessity, whichever is longer:
+
+- Employee Personnel Records: 7 years after termination of employment
+- Payroll and Tax Records: 7 years from the date of filing
+- Customer Contracts and Agreements: 10 years after contract expiration or termination
+- Financial Transactions and Invoices: 7 years from the transaction date
+- Email Communications (business-critical): 5 years from date of creation
+- Email Communications (routine): 2 years from date of creation
+- System and Application Logs: 1 year from date of generation
+- Security Incident Records: 5 years from date of resolution
+- Marketing and Customer Consent Records: Duration of consent plus 3 years
+- Board Meeting Minutes and Resolutions: Permanently retained
+- Intellectual Property Documentation: Permanently retained
+- Recruitment Records (unsuccessful candidates): 2 years from application date
+
+3. DELETION PROCEDURES
+
+Upon expiration of the applicable retention period, data must be securely deleted within 90 days. The following procedures apply:
+
+- Electronic Data: Must be permanently deleted using NIST SP 800-88 compliant methods. Simple file deletion or formatting is not acceptable. The IT department will execute quarterly bulk deletion cycles on the 15th of January, April, July, and October.
+- Physical Documents: Must be cross-cut shredded (DIN 66399 Level P-4 or higher) by the approved vendor, SecureShred Inc. Shredding certificates must be retained for 3 years.
+- Backup Media: Backup tapes and drives containing expired data must be degaussed and physically destroyed. IT maintains a destruction log audited annually by Internal Audit.
+- Cloud Storage: Data stored in AWS S3 and Azure Blob must have lifecycle policies configured to auto-delete after the retention period. The Cloud Operations team is responsible for verifying lifecycle rules quarterly.
+
+Employees must not independently delete data that may be subject to legal hold, active litigation, or regulatory investigation. Contact legal-hold@nextera-tech.com before deleting any data if uncertain.
+
+4. EXCEPTIONS
+
+The following exceptions to standard retention periods require written approval from the General Counsel:
+- Data subject to active litigation or regulatory investigation (legal hold) must be preserved indefinitely until the hold is lifted
+- Data required for ongoing business operations beyond the standard retention period
+- Data retained at the specific request of a regulatory body
+- Cross-border data transfers subject to international retention requirements that differ from this policy
+
+Exception requests must be submitted via the Legal Portal (legal.nextera-tech.com/retention-exception) and are reviewed within 10 business days.
+
+5. RESPONSIBILITIES
+
+Department heads are responsible for ensuring their teams comply with this policy. The Legal department conducts annual retention audits. The IT department manages technical implementation of retention and deletion processes. Violations of this policy may result in disciplinary action, regulatory fines, or legal liability.
+
+---
+Nextera Technologies Inc. | 4500 Innovation Drive, Austin, TX 78759
+CONFIDENTIAL - FOR MANAGEMENT USE ONLY

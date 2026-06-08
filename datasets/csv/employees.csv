@@ -1,0 +1,21 @@
+employee_id,first_name,last_name,department,role,salary,hire_date,status
+EMP-1001,Sandra,Mitchell,HR,VP of Human Resources,165000,2019-03-15,active
+EMP-1002,James,Kowalski,IT,Chief Information Security Officer,185000,2018-07-22,active
+EMP-1003,Priya,Sharma,Finance,Director of Compliance,142000,2020-01-10,active
+EMP-1004,Robert,Chen,Finance,Chief Financial Officer,210000,2017-11-05,active
+EMP-1005,Maria,Gonzalez,Sales,Regional Sales Manager,118000,2021-06-01,active
+EMP-1006,David,Thompson,Engineering,Senior Software Engineer,155000,2022-02-14,active
+EMP-1007,Aisha,Patel,IT,Systems Administrator,98000,2023-04-18,active
+EMP-1008,Marcus,Williams,Operations,Operations Manager,112000,2020-09-30,active
+EMP-1009,Emily,Nakamura,Engineering,Engineering Manager,162000,2019-08-12,active
+EMP-1010,Kevin,O'Brien,Sales,Account Executive,95000,2024-01-08,active
+EMP-1011,Laura,Fischer,HR,HR Business Partner,105000,2021-11-22,active
+EMP-1012,Rajesh,Gupta,Engineering,DevOps Engineer,138000,2022-07-05,active
+EMP-1013,Stephanie,Adams,Finance,Financial Analyst,92000,2023-09-16,active
+EMP-1014,Carlos,Rivera,Operations,Supply Chain Coordinator,78000,2024-03-11,active
+EMP-1015,Jennifer,Walsh,Sales,Sales Director,148000,2019-05-20,active
+EMP-1016,Thomas,Bergstrom,IT,Network Engineer,108000,2022-10-03,active
+EMP-1017,Natalie,Kim,Engineering,QA Lead,121000,2021-01-25,active
+EMP-1018,Andrew,Fitzgerald,Finance,Senior Accountant,104000,2020-06-14,terminated
+EMP-1019,Diana,Okonkwo,HR,Talent Acquisition Specialist,88000,2025-02-17,active
+EMP-1020,Michael,Larsson,Operations,Facilities Manager,94000,2023-12-01,on_leave
