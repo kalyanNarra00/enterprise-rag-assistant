@@ -14,7 +14,7 @@ A secure, enterprise-grade AI assistant powered by Retrieval-Augmented Generatio
 ## Architecture
 
 ```
-React Frontend (3000) --> Node.js Backend (5000) --> Python AI Service (8000)
+React Frontend (3000) --> Spring Boot Backend (5000) --> Python AI Service (8000)
                               |                           |
                            MongoDB                     ChromaDB
                         (Users, Logs)              (Vector Embeddings)
@@ -26,7 +26,8 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed system design, data flow, an
 
 ### Prerequisites
 
-- Node.js 18+
+- Java 17+ (JDK)
+- Maven 3.8+
 - Python 3.10+
 - MongoDB 7+
 - Groq API key (free at [console.groq.com](https://console.groq.com))
@@ -34,9 +35,9 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed system design, data flow, an
 ### 1. Clone and Install
 
 ```bash
-# Backend
+# Backend (Spring Boot)
 cd backend
-npm install
+mvn clean install -DskipTests
 
 # Frontend
 cd ../frontend
@@ -50,12 +51,12 @@ pip install -r requirements.txt
 ### 2. Configure Environment
 
 ```bash
-# backend/.env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/enterprise-rag
-JWT_SECRET=your_secret_key_here
-JWT_EXPIRE=7d
-AI_SERVICE_URL=http://localhost:8000
+# backend/src/main/resources/application.properties
+server.port=5000
+spring.data.mongodb.uri=mongodb://localhost:27017/enterprise-rag
+jwt.secret=your_secret_key_here
+jwt.expiration=604800000
+ai.service.url=http://localhost:8000
 
 # ai-service/.env
 AI_SERVICE_PORT=8000
@@ -66,21 +67,14 @@ CHROMA_PERSIST_DIR=./chroma_db
 EMBEDDING_MODEL=all-MiniLM-L6-v2
 ```
 
-### 3. Seed Database
-
-```bash
-cd backend
-node src/utils/seedUsers.js
-```
-
-### 4. Start Services
+### 3. Start Services
 
 ```bash
 # Terminal 1: MongoDB
 mongod --dbpath /data/db
 
 # Terminal 2: Backend (port 5000)
-cd backend && npm run dev
+cd backend && mvn spring-boot:run
 
 # Terminal 3: AI Service (port 8000)
 cd ai-service && python main.py
@@ -166,8 +160,8 @@ When a user queries, the backend builds a metadata filter based on their role. C
 | Component       | Technology                              |
 |-----------------|----------------------------------------|
 | Frontend        | React 18, React Router 6, React Markdown |
-| Backend         | Node.js, Express 4, Mongoose           |
-| Auth            | JWT, bcryptjs                          |
+| Backend         | Java 17, Spring Boot 3.2, Spring Data MongoDB |
+| Auth            | Spring Security, JWT (JJWT), BCrypt    |
 | Database        | MongoDB                                |
 | AI Service      | Python 3, FastAPI, Uvicorn             |
 | Vector Store    | ChromaDB                               |

@@ -10,3 +10,14 @@ dist/
 uploads/
 *.egg-info/
 venv/
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+.mvn/
+mvnw
+mvnw.cmd
+.idea/
+*.iml
