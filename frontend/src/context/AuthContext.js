@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
     }
     try {
       const resp = await authAPI.getMe(sessionToken);
-      setProfile(resp.user);
+      setProfile(resp.user || resp);
       setError(null);
     } catch {
       setSessionToken(null);
