@@ -34,10 +34,10 @@ class SemanticRetriever:
             List of result dicts with 'text', 'metadata', 'score'.
         """
         try:
-            results = self._vector_store.search(
-                query=query,
-                n_results=n_results,
-                metadata_filter=metadata_filter,
+            results = self._vector_store.find_similar(
+                query_text=query,
+                top_k=n_results,
+                access_filter=metadata_filter,
             )
             logger.info(f"Semantic retrieval returned {len(results)} results for: {query[:80]}")
             return results

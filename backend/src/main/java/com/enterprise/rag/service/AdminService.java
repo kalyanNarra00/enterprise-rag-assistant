@@ -60,8 +60,7 @@ public class AdminService {
     public Map<String, Object> getSystemStats() {
         Map<String, Object> stats = new HashMap<>();
 
-        // Documents stats from AI service
-        Map<String, Object> documentsStats = new HashMap<>();
+        int documentCount = 0;
         try {
             ResponseEntity<Map<String, Object>> aiStatsResponse = restTemplate.exchange(
                     aiServiceUrl + "/api/stats",
@@ -70,16 +69,11 @@ public class AdminService {
                     new ParameterizedTypeReference<Map<String, Object>>() {}
             );
             Map<String, Object> aiStats = aiStatsResponse.getBody();
-            if (aiStats != null && aiStats.containsKey("document_count")) {
-                documentsStats.put("total", aiStats.get("document_count"));
-            } else {
-                documentsStats.put("total", 0);
+            if (aiStats != null && aiStats.get("document_count") instanceof Number n) {
+                documentCount = n.intValue();
             }
-        } catch (Exception e) {
-            documentsStats.put("total", 0);
-            documentsStats.put("error", "AI service unavailable");
-        }
-        stats.put("documents", documentsStats);
+        } catch (Exception ignored) {}
+        stats.put("documents", documentCount);
 
         // Users stats
         Map<String, Object> usersStats = new HashMap<>();

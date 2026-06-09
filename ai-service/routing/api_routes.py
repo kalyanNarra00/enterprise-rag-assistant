@@ -95,7 +95,7 @@ def load_and_index_documents() -> Dict[str, int]:
         overlap=settings.CHUNK_OVERLAP,
     )
 
-    indexed = vector_store.add_documents(chunks)
+    indexed = vector_store.ingest(chunks)
 
     if keyword_retriever is not None:
         keyword_retriever.build_index(chunks)
@@ -172,10 +172,10 @@ async def query_endpoint(request: QueryRequest) -> QueryResponse:
             )
 
         # Generate response
-        generation = response_generator.generate(
-            query=request.query,
-            context_chunks=results,
-            user_role=request.user_role,
+        generation = response_generator.synthesize(
+            question=request.query,
+            evidence_chunks=results,
+            requester_role=request.user_role,
         )
 
         elapsed_time = time.time() - start_time
@@ -231,7 +231,7 @@ async def stats_endpoint() -> StatsResponse:
         raise HTTPException(status_code=503, detail="Service not initialized")
 
     try:
-        stats = vector_store.get_stats()
+        stats = vector_store.get_statistics()
         return StatsResponse(
             document_count=stats["document_count"],
             collection_name=stats["collection_name"],

@@ -29,7 +29,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     from routing.api_routes import vector_store as vs
 
     # Load documents if the vector store is empty
-    if vs is not None and not vs.is_initialized():
+    if vs is not None and not vs.is_populated():
         logger.info("Vector store is empty. Loading and indexing documents...")
         try:
             stats = load_and_index_documents()
